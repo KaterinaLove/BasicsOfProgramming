@@ -35,7 +35,7 @@ if (riddle3 == "Фонарь") {
   ++counter;
 } else {
   alert("Не правельно")
-};аа
+};
 
 console.log("Правильных ответов: " + counter);
 
