@@ -17,3 +17,18 @@ if (play1 == play2) {
 } else {
   console.log("У вас нет счастливого билетика");
 }
+
+console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+console.log("Задание 2");
+console.log("Банковская программа");
+let contribution = 300000;
+let percent = 9;
+let year = 5;
+while (year > 0) {
+  let onepercent = contribution / 100;
+  let yearpercent = onepercent * percent;
+  contribution = contribution + yearpercent;
+  console.log("Вы получите: " + contribution.toFixed(2));
+  --year;
+}
+
