@@ -39,7 +39,7 @@ console.log("Встроить в сайт свою фотографию");
 console.log("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
 console.log("Задание 4");
 console.log("Игра для 2 играков");
-var compNum Math.random(Math.random() * 100);
+var compNum = Math.round(Math.random() * 100);
 
 //Диалоговое окошко
 if (confirm('Вы хотите начать игру?')) {
