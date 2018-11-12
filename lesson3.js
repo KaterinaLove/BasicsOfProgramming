@@ -4,8 +4,9 @@ function factorial(n) {
   if (n == 1) {
     return 1;
   } else if (n > 1 && n < 100) {
-    return factorial(n - 1);
+    return n * factorial(n - 1);
   } else {
     alert('Ошибка. Введите правельное значение')
   }
 }
+console.log('5! = ' + factorial(5));
