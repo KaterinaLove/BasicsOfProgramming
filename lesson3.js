@@ -1,0 +1,11 @@
+//на уроке. Вычисление факториала
+//5! = 5*4*3*2*1
+function factorial(n) {
+  if (n == 1) {
+    return 1;
+  } else if (n > 1 && n < 100) {
+    return factorial(n - 1);
+  } else {
+    alert('Ошибка. Введите правельное значение')
+  }
+}
