@@ -19,11 +19,44 @@
    <main class="mainIndex">  <?-- Содержание ради чего пришол пользователь --?>
       <img src="photo.jpg" alt="Катюша">
       <div class="indexContent">
-            Добрый день. Меня зовут Катерина. Я - начинающий программист. Я совсем недавно встал на этот путь, но уже успел написать свой первый сайт. <br>
-            В этом мне помог IT-портал GeekBrains <br>
-            Я очень люблю путешествовать. На этом сайте вы найдете мои самые любимые фотографии из Венеции и Парижа
+            <from action="" class = "main-calculator">
+        
+<!--         Первое число-->
+          <div class="from-row">
+<!--           метка-->
+            <lebel for = "num-1">Первое число</lebel>
+<!--            поле ввода-->
+<!--           placeholder - это текст внутри поля ввода-->
+            <input type="text" id = "num-1" placeholder = "Первое число">
+          </div>
+          
+<!--          Второе число-->
+          <div class="from-row">
+            <lebel for = "num-2">Второе число</lebel>
+            <input type="text" id = "num-2" placeholder = "Второе число">
+          </div>
+          
+<!--          кнопки-->
+          <div class="from-row">
+            <button type="button" onclick = "summ()">+</button>
+            <button type="button" onclick = "distract()">-</button>
+            <button type="button" onclick = "multiply()">*</button>
+            <button type="button" onclick = "divide()">/</button>
+          </div>
+          
+          <div class="from-row">
+<!--      Результат readonly - позваляет не менять результат. только для копирования-->
+            <lebel for = "result">Результат</lebel>
+            <input type="text" id = "result" placeholder = "Результат" readonly>
+          </div>
+          
+        </from>
       </div>
-      <div class="clearfix"></div>
+      <div class="main-text">
+       
+        
+        <div class="clearfit"></div>
+      </div>
    </main>
    <footer>
        Все права защищены &copy; 2018
