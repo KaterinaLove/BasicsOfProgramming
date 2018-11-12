@@ -10,3 +10,28 @@ function factorial(n) {
   }
 }
 console.log('5! = ' + factorial(5));
+
+//Калькулятор////////////////////////////////////
+function summ() {
+  let a = +document.getElementById('num-1').value,
+      b = +document.getElementById('num-2').value;
+  document.getElementById('result').value = a + b;
+}
+
+function distract() {
+  let a = +document.getElementById('num-1').value,
+      b = +document.getElementById('num-2').value;
+  document.getElementById('result').value = a - b;
+}
+
+function multiply() {
+  let a = +document.getElementById('num-1').value,
+      b = +document.getElementById('num-2').value;
+  document.getElementById('result').value = a * b;
+}
+
+function divide() {
+  let a = +document.getElementById('num-1').value,
+      b = +document.getElementById('num-2').value;
+  document.getElementById('result').value = a / b;
+}
