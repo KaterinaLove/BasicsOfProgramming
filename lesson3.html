@@ -18,6 +18,7 @@
    <h1>Личный сайт студента GeekBrains</h1>
    <main class="mainIndex">  <?-- Содержание ради чего пришол пользователь --?>
       <img src="photo.jpg" alt="Катюша">
+      <div class = "block">
       <div class="indexContent">
             <from action="" class = "main-calculator">
         
@@ -52,10 +53,45 @@
           
         </from>
       </div>
+
+      <div class="indexContent">
+            <from action="" class = "main-calculator">
+<!--        Первая загадка-->
+          <div class="from-row">
+           <p>Всегда он в работе, Когда говорим, А отдыхает, Когда мы молчим.</p>
+            <lebel for = "answer-1">Введите ответ</lebel>
+            <input type="text" id = "answer-1" placeholder = "Введите ответ">
+          </div>
+<!--          Вторая загадка-->
+          <div class="from-row">
+           <p>Он с хоботом резиновым, С желудком парусиновым. Как загудит его мотор, Глотает он и пыль, и сор.</p>
+            <lebel for = "answer-2">Введите ответ</lebel>
+            <input type="text" id = "answer-2" placeholder = "Введите ответ">
+          </div>
+<!--          третья загадка-->
+          <div class="from-row">
+           <p>Дом — стеклянный пузырек, А живет в нем огонек. Днем он спит, а как проснется, Ярким пламенем зажжется.</p>
+            <lebel for = "answer-3">Введите ответ</lebel>
+            <input type="text" id = "answer-3" placeholder = "Введите ответ">
+          </div>
+<!--          кнопки-->
+          <div class="from-row">
+            <button type="button-answer" onclick = "answer()">Ответить</button>
+          </div>
+          
+          <div class="from-row">
+<!--      Результат readonly - позваляет не менять результат. только для копирования-->
+            <lebel for = "resultanswer">Вы ответили правельно на: </lebel>
+            <input type="text" id = "resultanswer" placeholder = "Результат" readonly>
+         <div id="for-resultanswer"></div>
+          </div>
+          
+        </from>
+      </div>
       <div class="main-text">
-       
+       </div>
         
-        <div class="clearfit"></div>
+        <div class="clearfit"><p><br><br><br><br><br></p></div>
       </div>
    </main>
    <footer>
