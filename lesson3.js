@@ -35,3 +35,37 @@ function divide() {
       b = +document.getElementById('num-2').value;
   document.getElementById('result').value = a / b;
 }
+//загадки
+function answer () {
+  let a = document.getElementById('answer-1').value,
+      b = document.getElementById('answer-2').value,
+      c = document.getElementById('answer-3').value,
+      congratulation = "Вы ответили правельно!",
+      mistake = "Вы ответили не правельно",
+      answer1, answer2, answer3, counter = 0;
+      
+  if (a.toLowerCase() == "Язык".toLowerCase()) {
+    answer1 = congratulation;
+    ++counter;
+  } else {
+    answer1 = mistake;
+  };
+
+  if (b.toLowerCase() == "Пылесос".toLowerCase()) {
+    answer2 = congratulation;
+    ++counter;
+  } else {
+    answer2 = mistake;
+  };
+
+  if (c.toLowerCase() == "Фонарь".toLowerCase()) {
+    answer3 = congratulation;
+    ++counter;
+  } else {
+    answer3 = mistake;
+  };
+ //1-строка говарит куда передать, вторая откуда, третья что передать
+  document.getElementById("for-resultanswer").innerHTML = 
+    document.getElementById('resultanswer').value = 
+    ("На первую загадгу " + answer1 + ", " + "На вторую загадгу " + answer2 + ", " + "На третью загадгу " + answer3 + ". " + "Всего правильных ответов: " + counter);
+}
