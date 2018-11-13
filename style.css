@@ -4,7 +4,6 @@ html, body {
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
-    display: flex;
     flex-direction: column;
     background: #efefef;
 }
@@ -74,10 +73,12 @@ main {
         width: 1140px;
     }
 }
-
+.block {
+  display: block;
+}
 .indexContent {
-    margin-left: 78px;
-    padding: 40px 50px;
+    margin: 0 0 10px 78px;
+    padding: 30px 50px;
     background-color: #fff;
     width: 400px;
 }
@@ -134,11 +135,16 @@ input {
     }
 }
 
+#for-resultanswer {
+  margin-top: 20px;
+}
+
 footer {
     min-height: 140px;
     line-height: 140px;
     background-color: #434445;
     color: #a4a4a4;
     text-align: center;
+  
 }
 
