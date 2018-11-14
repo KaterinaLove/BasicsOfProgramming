@@ -68,3 +68,39 @@ function answer () {
   document.getElementById("for-resultanswer").innerHTML = 
     ("На первую загадгу " + answer1 + ", " + "На вторую загадгу " + answer2 + ", " + "На третью загадгу " + answer3 + ". " + "Всего правильных ответов: " + counter);
 }
+//угадайка
+  var compNum = Math.round(Math.random() * 100);
+
+function ugadayka() {
+
+var gameOver = false, 
+    areLosers = true;
+//первый цикл для 10 раундов
+for (var i = 0; i < 10; i++) {
+  //второй цикл для количества икраков
+  for (var j = 0; j < 2; j++) {
+    var input = +document.getElementById("num").value;
+    if (input == 'end') {
+      gameOver = true;
+      break;
+    }
+    var userNum = +input;
+    if (userNum < compNum) {
+      document.getElementById("ugadaykaunsver").value = ('Число меньше загаданного');
+    } else if (userNum > compNum) {
+      document.getElementById("ugadaykaunsver").value = ('Число больше заганного');
+    } else if ( userNum == compNum) {
+      document.getElementById("ugadaykaunsver").value = ('Игрок ' + (j + 1) + ' угадал! Игра закончила');
+      gameOver = true;
+      areLosers = false;
+      break;
+    } else {document.getElementById("ugadaykaunsver").value = ('Ошибка')}
+  }
+  if (gameOver) {
+    break;
+  }
+}
+  if (areLosers && gameOver) {
+    document.getElementById("ugadaykaunsver").value = ('Вы не угодали число за нужное количество раундов');
+  }
+}
