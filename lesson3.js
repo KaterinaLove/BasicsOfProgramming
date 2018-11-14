@@ -64,8 +64,7 @@ function answer () {
   } else {
     answer3 = mistake;
   };
- //1-строка говарит куда передать, вторая откуда, третья что передать
+ //1-строка говарит куда передать, что передать
   document.getElementById("for-resultanswer").innerHTML = 
-    document.getElementById('resultanswer').value = 
     ("На первую загадгу " + answer1 + ", " + "На вторую загадгу " + answer2 + ", " + "На третью загадгу " + answer3 + ". " + "Всего правильных ответов: " + counter);
 }
